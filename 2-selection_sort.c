@@ -11,6 +11,9 @@ void selection_sort(int *array, size_t size)
 	int value = 0, aux = 0;
 	size_t i = 0, j = 0, pos = 0;
 
+	if (array == NULL || size == 0)
+		return;
+
 	for (; i < size - 1; i++)
 	{
 		value = array[i];
