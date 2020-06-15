@@ -8,7 +8,7 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	int value = 0, aux = 0;
+	int aux = 0;
 	size_t i = 0, j = 0, pos = 0;
 
 	if (array == NULL || size == 0)
@@ -16,14 +16,11 @@ void selection_sort(int *array, size_t size)
 
 	for (; i < size - 1; i++)
 	{
-		value = array[i];
+		pos = i;
 		for (j = i + 1; j < size; j++)
 		{
-			if (value > array[j])
-			{
-				value = array[j];
+			if (array[j] < array[pos])
 				pos = j;
-			}
 		}
 		if (pos != i)
 		{
