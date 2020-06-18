@@ -30,7 +30,7 @@ void counting_sort(int *array, size_t size)
 	for (j = 0; j <= k; j++)
 		counter[j] = 0;
 	for (i = 0; i < size; i++)
-		counter[array[i]] = 1;
+		counter[array[i]] += 1;
 	for (j = 0; j < k; j++)
 	{
 		counter[j + 1] += counter[j];
