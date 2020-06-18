@@ -6,7 +6,7 @@
   * counting_sort - Afunction that sorts an array using counting algorithm.
   * @array: The array to sort.
   * @size: The length of the array.
-  * REturn: Nothing.
+  * Return: Nothing.
   */
 void counting_sort(int *array, size_t size)
 {
@@ -35,7 +35,7 @@ void counting_sort(int *array, size_t size)
 	{
 		counter[j + 1] += counter[j];
 	}
-    print_array(counter, k + 1);
+	print_array(counter, k + 1);
 	counter[j + 1] += counter[j];
 	/*printf("%d\n", counter[j + 1]);*/
 
