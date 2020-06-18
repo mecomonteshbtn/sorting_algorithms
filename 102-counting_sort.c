@@ -34,7 +34,6 @@ void counting_sort(int *array, size_t size)
 	for (j = 0; j < k; j++)
 	{
 		counter[j + 1] += counter[j];
-		/*printf("%d, ", counter[j]);*/
 	}
     print_array(counter, k + 1);
 	counter[j + 1] += counter[j];
